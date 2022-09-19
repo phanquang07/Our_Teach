@@ -48,9 +48,17 @@ img {
 }
 
 .container-xl {
-  max-width: 1260px;
-  padding: 0 45px;
+  max-width: 1240px;
+  padding: 0 20px;
   height: inherit;
+}
+
+.row {
+  margin: 0 -20px;
+}
+
+.col {
+  padding: 0 20px;
 }
 
 .header {
@@ -60,11 +68,16 @@ img {
   z-index: 4;
 }
 .header .pd30 {
+  max-width: 1260px;
   padding: 0 30px;
 }
 .header .pd30 .header-nav {
   height: 80px;
   padding: 0;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
 }
 
 .logo-link {
@@ -90,8 +103,6 @@ img {
   line-height: 80px;
   padding: 0;
   transition: all 0.3s ease;
-}
-.nav-right .nav-menu .nav-link:not(:last-of-type) {
   padding-right: 50px;
 }
 .nav-right .nav-menu .nav-link:hover {
@@ -128,13 +139,22 @@ img {
 .nav-right .header-contact .header-social .social-link {
   color: #191919;
   font-size: 13.586px;
-  margin-left: 10.5px;
+  margin-left: 8.5px;
   transition: all 0.3s ease;
 }
 .nav-right .header-contact .header-social .social-link:hover {
   color: #b61984;
 }
 
+@media screen and (max-width: 1199px) {
+  .header-nav {
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+  .logo-link {
+    margin-left: 10.5px;
+  }
+}
 .our-carousel {
   background-image: url(../img/yellow_top_wave_01.png), url(../img/Violet_top_left_wave.png);
   background-size: contain;
@@ -143,7 +163,7 @@ img {
 }
 .our-carousel .carousel-contents {
   align-items: center;
-  padding: 0 60px;
+  padding: 60px 0;
 }
 .our-carousel .carousel-contents .carousel-text p {
   color: #b61984;
@@ -158,16 +178,20 @@ img {
 
 .our-team {
   background-color: #dcd1f3;
+  background-image: url("../img/Wave_White_bottom_right_shape_01.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .our-team .team-item {
-  padding-top: 30px;
+  padding-top: 40px;
   text-align: center;
 }
 .our-team .team-item .team-card {
   border: 1px transparent;
   border-radius: 10px;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .our-team .team-item .team-card:hover {
   box-shadow: 0px 14px 20px 8px rgba(0, 0, 0, 0.15);
@@ -183,9 +207,7 @@ img {
   transform: scale3d(1, 1, 1);
 }
 .our-team .team-item .team-card .card-body {
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 20px 30px 35px 30px;
 }
 .our-team .team-item .team-card .card-body .mem-nationality {
   color: #b61984;
@@ -193,6 +215,7 @@ img {
   font-weight: 600;
 }
 .our-team .team-item .team-card .card-body .mem-name {
+  margin-bottom: 15px;
   color: #191919;
   font-size: 22.25px;
   font-weight: 700;

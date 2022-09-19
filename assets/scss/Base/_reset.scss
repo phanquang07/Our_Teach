@@ -48,7 +48,14 @@ img {
 }
 
 .container-xl {
-  max-width: 1260px;
-  padding: 0 45px;
+  max-width: 1240px;
+  padding: 0 20px;
   height: inherit;
+}
+
+.row {
+  margin: 0 -20px;
+}
+.col {
+  padding: 0 20px; 
 }

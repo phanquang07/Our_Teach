@@ -4,6 +4,7 @@
   width: 100%;
   z-index: 4;
   .pd30 {
+    max-width: 1260px;
     padding: 0 30px;
     .header-nav {
       height: $height;
@@ -11,7 +12,9 @@
     }
   }
 }
-
+.navbar-toggler {
+  border-color: transparent !important;
+}
 .logo-link {
   height: 100%;
   margin-right: 0;
@@ -30,9 +33,7 @@
       line-height: $lh80;
       padding: $pd0;
       transition: all 0.3s ease;
-      &:not(:last-of-type) {
-        padding-right: 50px;
-      }
+      padding-right: 50px;
       &:hover {
         color: $color-secondary;
       }
@@ -68,12 +69,23 @@
     .header-social {
       .social-link {
         @include styleIcon($color-primary, $fs13 + 0.586px);
-        margin-left: 10.5px;
+        margin-left: 8.5px;
         transition: all 0.3s ease;
         &:hover {
           @include iconHover($color-secondary);
         }
       }
     }
+  }
+}
+
+// Reponsive
+@include responsive('extra-large') {
+  .header-nav {
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+  .logo-link {
+    margin-left: 10.5px;
   }
 }
