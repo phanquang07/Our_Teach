@@ -2,70 +2,76 @@
   height: 80px;
   position: fixed;
   width: 100%;
-  .header-nav {
-    height: $inherit;
-    padding: $pd0;
-    .logo-link {
-      height: 100%;
-      margin-right: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-      img {
-        height: $inherit;
+  z-index: 4;
+  .pd30 {
+    padding: 0 30px;
+    .header-nav {
+      height: $height;
+      padding: $pd0;
+    }
+  }
+}
+
+.logo-link {
+  height: 100%;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  img {
+    height: $height;
+  }
+}
+.nav-right {
+  justify-content: flex-end;
+  .nav-menu {
+    align-items: center;
+    .nav-link {
+      @include styleText($color-primary, $fs13, $fw600);
+      line-height: $lh80;
+      padding: $pd0;
+      transition: all 0.3s ease;
+      &:not(:last-of-type) {
+        padding-right: 50px;
+      }
+      &:hover {
+        color: $color-secondary;
       }
     }
-    .nav-right {
-      justify-content: flex-end;
-      .nav-menu {
-        align-items: center;
-        .nav-link {
-          @include styleText($color-primary, $fs13, $fw600);
-          line-height: $lh80;
-          padding: $pd0;
-          transition: all .3s ease;
-          &:not(:last-of-type) {
-            padding-right: 50px;
-          }
-          &:hover {
-            color: $color-secondary;
-          }
-        }
-        .active {
-          color: $color-secondary;
-        }
+    .active {
+      color: $color-secondary;
+    }
+  }
+  .header-contact {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    .btn-phone {
+      @include styleText($color-white, $fs13 + 0.5px, $fw500);
+      @include styleBtn(
+        $color-white,
+        $color-secondary,
+        1px solid $color-secondary,
+        $br50,
+        13.85px,
+        19.25px
+      );
+      line-height: 1;
+      margin-right: 6.75px;
+      transition: all 0.5s ease;
+      &:hover {
+        @include btnHover($color-secondary, $color-white);
       }
-      .header-contact {
-        display: flex;
-        align-items: center;
-        margin-left: 50px;
-        .btn-phone {
-          @include styleText($color-white, $fs13 + 0.5px, $fw500);
-          @include styleBtn(
-            $color-white,
-            $color-secondary,
-            1px solid $color-secondary,
-            $br50,
-            13.85px, 19.25px
-          );
-          line-height: 1;
-          margin-right: 6.75px;
-          transition: all .5s ease;
-          &:hover {
-            @include btnHover($color-secondary, $color-white)
-          }
-          span {
-            margin-left: 4px
-          }
-        }
-        .header-social {
-          .social-link {
-            @include styleIcon($color-primary, $fs13 + 0.586px);
-            margin-left: 10.5px;
-            transition: all .3s ease;
-            &:hover {
-              @include iconHover($color-secondary);
-            }
-          }
+      span {
+        margin-left: 4px;
+      }
+    }
+    .header-social {
+      .social-link {
+        @include styleIcon($color-primary, $fs13 + 0.586px);
+        margin-left: 10.5px;
+        transition: all 0.3s ease;
+        &:hover {
+          @include iconHover($color-secondary);
         }
       }
     }

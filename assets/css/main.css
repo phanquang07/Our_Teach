@@ -49,7 +49,7 @@ img {
 
 .container-xl {
   max-width: 1260px;
-  padding: 0 30px;
+  padding: 0 45px;
   height: inherit;
 }
 
@@ -57,27 +57,33 @@ img {
   height: 80px;
   position: fixed;
   width: 100%;
+  z-index: 4;
 }
-.header .header-nav {
-  height: inherit;
+.header .pd30 {
+  padding: 0 30px;
+}
+.header .pd30 .header-nav {
+  height: 80px;
   padding: 0;
 }
-.header .header-nav .logo-link {
+
+.logo-link {
   height: 100%;
   margin-right: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-.header .header-nav .logo-link img {
-  height: inherit;
+.logo-link img {
+  height: 80px;
 }
-.header .header-nav .nav-right {
+
+.nav-right {
   justify-content: flex-end;
 }
-.header .header-nav .nav-right .nav-menu {
+.nav-right .nav-menu {
   align-items: center;
 }
-.header .header-nav .nav-right .nav-menu .nav-link {
+.nav-right .nav-menu .nav-link {
   color: #191919;
   font-size: 13px;
   font-weight: 600;
@@ -85,21 +91,21 @@ img {
   padding: 0;
   transition: all 0.3s ease;
 }
-.header .header-nav .nav-right .nav-menu .nav-link:not(:last-of-type) {
+.nav-right .nav-menu .nav-link:not(:last-of-type) {
   padding-right: 50px;
 }
-.header .header-nav .nav-right .nav-menu .nav-link:hover {
+.nav-right .nav-menu .nav-link:hover {
   color: #b61984;
 }
-.header .header-nav .nav-right .nav-menu .active {
+.nav-right .nav-menu .active {
   color: #b61984;
 }
-.header .header-nav .nav-right .header-contact {
+.nav-right .header-contact {
   display: flex;
   align-items: center;
   margin-left: 50px;
 }
-.header .header-nav .nav-right .header-contact .btn-phone {
+.nav-right .header-contact .btn-phone {
   color: #fff;
   font-size: 13.5px;
   font-weight: 500;
@@ -112,20 +118,20 @@ img {
   margin-right: 6.75px;
   transition: all 0.5s ease;
 }
-.header .header-nav .nav-right .header-contact .btn-phone:hover {
+.nav-right .header-contact .btn-phone:hover {
   color: #b61984;
   background-color: #fff;
 }
-.header .header-nav .nav-right .header-contact .btn-phone span {
+.nav-right .header-contact .btn-phone span {
   margin-left: 4px;
 }
-.header .header-nav .nav-right .header-contact .header-social .social-link {
+.nav-right .header-contact .header-social .social-link {
   color: #191919;
   font-size: 13.586px;
   margin-left: 10.5px;
   transition: all 0.3s ease;
 }
-.header .header-nav .nav-right .header-contact .header-social .social-link:hover {
+.nav-right .header-contact .header-social .social-link:hover {
   color: #b61984;
 }
 
@@ -137,4 +143,70 @@ img {
 }
 .our-carousel .carousel-contents {
   align-items: center;
+  padding: 0 60px;
+}
+.our-carousel .carousel-contents .carousel-text p {
+  color: #b61984;
+  font-size: 16.5px;
+  font-weight: 600;
+}
+.our-carousel .carousel-contents .carousel-text h1 {
+  color: #191919;
+  font-size: 57px;
+  font-weight: 700;
+}
+
+.our-team {
+  background-color: #dcd1f3;
+}
+.our-team .team-item {
+  padding-top: 30px;
+  text-align: center;
+}
+.our-team .team-item .team-card {
+  border: 1px transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.our-team .team-item .team-card:hover {
+  box-shadow: 0px 14px 20px 8px rgba(0, 0, 0, 0.15);
+}
+.our-team .team-item .team-card .team-img {
+  overflow: hidden;
+}
+.our-team .team-item .team-card .team-img:hover img {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.our-team .team-item .team-card .team-img img {
+  transition: 1s ease;
+  transform: scale3d(1, 1, 1);
+}
+.our-team .team-item .team-card .card-body {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.our-team .team-item .team-card .card-body .mem-nationality {
+  color: #b61984;
+  font-size: 11.25px;
+  font-weight: 600;
+}
+.our-team .team-item .team-card .card-body .mem-name {
+  color: #191919;
+  font-size: 22.25px;
+  font-weight: 700;
+}
+.our-team .team-item .team-card .card-body .mem-desc {
+  color: #191919;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  visibility: visible;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
