@@ -1,0 +1,27 @@
+@mixin styleText($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin styleBtn($color, $bg-color, $border, $br, $pd-tb, $pd-lr) {
+  color: $color;
+  background-color: $bg-color;
+  border: $border;
+  border-radius: $br;
+  padding: $pd-tb $pd-lr;
+}
+
+@mixin btnHover($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+}
+
+@mixin styleIcon($color, $fs) {
+  color: $color;
+  font-size: $fs;
+}
+
+@mixin iconHover($color) {
+  color: $color;
+}

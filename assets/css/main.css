@@ -1,0 +1,140 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8rem;
+  color: #191919;
+  background-color: #fff;
+  color: #191919;
+  font-size: "15px";
+  font-weight: "";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #191919;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container-xl {
+  max-width: 1260px;
+  padding: 0 30px;
+  height: inherit;
+}
+
+.header {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+}
+.header .header-nav {
+  height: inherit;
+  padding: 0;
+}
+.header .header-nav .logo-link {
+  height: 100%;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.header .header-nav .logo-link img {
+  height: inherit;
+}
+.header .header-nav .nav-right {
+  justify-content: flex-end;
+}
+.header .header-nav .nav-right .nav-menu {
+  align-items: center;
+}
+.header .header-nav .nav-right .nav-menu .nav-link {
+  color: #191919;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 80px;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+.header .header-nav .nav-right .nav-menu .nav-link:not(:last-of-type) {
+  padding-right: 50px;
+}
+.header .header-nav .nav-right .nav-menu .nav-link:hover {
+  color: #b61984;
+}
+.header .header-nav .nav-right .nav-menu .active {
+  color: #b61984;
+}
+.header .header-nav .nav-right .header-contact {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.header .header-nav .nav-right .header-contact .btn-phone {
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #b61984;
+  border: 1px solid #b61984;
+  border-radius: 50px;
+  padding: 13.85px 19.25px;
+  line-height: 1;
+  margin-right: 6.75px;
+  transition: all 0.5s ease;
+}
+.header .header-nav .nav-right .header-contact .btn-phone:hover {
+  color: #b61984;
+  background-color: #fff;
+}
+.header .header-nav .nav-right .header-contact .btn-phone span {
+  margin-left: 4px;
+}
+.header .header-nav .nav-right .header-contact .header-social .social-link {
+  color: #191919;
+  font-size: 13.586px;
+  margin-left: 10.5px;
+  transition: all 0.3s ease;
+}
+.header .header-nav .nav-right .header-contact .header-social .social-link:hover {
+  color: #b61984;
+}
+
+.our-carousel {
+  background-image: url(../img/yellow_top_wave_01.png), url(../img/Violet_top_left_wave.png);
+  background-size: contain;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+}
+.our-carousel .carousel-contents {
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

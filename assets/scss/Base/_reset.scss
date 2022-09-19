@@ -1,0 +1,54 @@
+@import '../Helper/variables';
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8rem;
+  color: $color-primary;
+  background-color: $color-white;
+  @include styleText($color-primary,'15px', '')
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.container-xl {
+  max-width: 1260px;
+  padding: 0 30px;
+  height: inherit;
+}
