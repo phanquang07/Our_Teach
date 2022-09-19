@@ -232,4 +232,35 @@ img {
   text-overflow: ellipsis;
   visibility: visible;
   overflow: hidden;
+}
+
+.container-1000 {
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.register-course {
+  padding-top: 60px;
+  background-image: url(../img/accent_bottom_wave_01.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.register-course .register-course-item {
+  margin-top: 60px;
+}
+.register-course .register-course-item .register-right-contents {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 25px;
+}
+.register-course .register-course-item .register-right-contents h2 {
+  color: #191919;
+  font-size: 37.5px;
+  font-weight: 700;
+}
+
+.form-item {
+  margin-top: 15px;
 }/*# sourceMappingURL=main.css.map */

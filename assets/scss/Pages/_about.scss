@@ -50,3 +50,34 @@
     }
   }
 }
+
+// Register course
+.container-1000 {
+  max-width: 1040px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.register-course {
+  padding-top: 60px;
+  background-image: url(../img/accent_bottom_wave_01.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  .register-course-item {
+    margin-top: 60px;
+    .register-right-contents {
+      background-color: $color-white;
+      border-radius: 10px;
+      padding: 0 25px;
+      
+      h2 {
+        @include styleText($color-primary, 37.5px, $fw700)
+      }
+    }
+  }
+}
+
+.form-item {
+  margin-top: 15px;
+}
