@@ -27,7 +27,8 @@ h4,
 h5,
 h6,
 ul,
-p {
+p,
+label {
   margin-bottom: 0;
 }
 
@@ -109,7 +110,7 @@ img {
   color: #b61984;
 }
 .nav-right .nav-menu .active {
-  color: #b61984;
+  color: #b61984 !important;
 }
 .nav-right .header-contact {
   display: flex;
@@ -240,6 +241,26 @@ img {
   margin: 0 auto;
 }
 
+.form-control:focus {
+  outline: transparent !important;
+  border-color: #fff !important;
+}
+
+.form-control {
+  height: 38.4px;
+}
+
+.form-textarea {
+  border-radius: 20px !important;
+  align-items: stretch !important;
+}
+.form-textarea label i {
+  padding-top: 1em;
+}
+.form-textarea textarea {
+  padding: 1em !important;
+}
+
 .register-course {
   padding-top: 60px;
   background-image: url(../img/accent_bottom_wave_01.png);
@@ -253,14 +274,137 @@ img {
 .register-course .register-course-item .register-right-contents {
   background-color: #fff;
   border-radius: 10px;
-  padding: 0 25px;
+  padding: 40px 25px 50px 25px;
 }
 .register-course .register-course-item .register-right-contents h2 {
   color: #191919;
   font-size: 37.5px;
   font-weight: 700;
 }
-
-.form-item {
+.register-course .register-course-item .register-right-contents .form-register {
+  padding-top: 50px;
+}
+.register-course .register-course-item .register-right-contents .form-register .form-item {
   margin-top: 15px;
+}
+.register-course .register-course-item .register-right-contents .form-register .form-item .form-item-inner {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in;
+}
+.register-course .register-course-item .register-right-contents .form-register .form-item .form-item-inner label i {
+  color: #b61984;
+  padding-left: 16px;
+}
+.register-course .register-course-item .register-right-contents .form-register .form-item .form-item-inner input,
+.register-course .register-course-item .register-right-contents .form-register .form-item .form-item-inner select,
+.register-course .register-course-item .register-right-contents .form-register .form-item .form-item-inner textarea {
+  font-size: 12px;
+  border: transparent;
+  padding: 0.4em;
+}
+.register-course .register-course-item .register-right-contents .form-register .form-item .form-item-inner input:focus .form-item-inner,
+.register-course .register-course-item .register-right-contents .form-register .form-item .form-item-inner select:focus .form-item-inner,
+.register-course .register-course-item .register-right-contents .form-register .form-item .form-item-inner textarea:focus .form-item-inner {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.register-course .register-course-item .register-right-contents .form-register .btn-register {
+  color: #fff;
+  background-color: #b61984;
+  border: 1px solid #b61984;
+  border-radius: 50px;
+  padding: 9.5px 52.5px;
+  margin-top: 45px;
+  transition: all 0.5s ease;
+}
+.register-course .register-course-item .register-right-contents .form-register .btn-register:hover {
+  color: #b61984;
+  background-color: #fff;
+}
+
+.contact {
+  background-image: url("../img/footer_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 250px;
+}
+.contact .contact-item {
+  padding: 0 40px;
+}
+.contact .contact-item .contact-title {
+  color: #fff;
+  font-size: 22.25px;
+  font-weight: 700;
+}
+.contact .contact-item .contact-inner-list {
+  margin-top: 30px;
+}
+.contact .contact-item .contact-inner-list .contact-inner-item {
+  line-height: 1;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.contact .contact-item .contact-inner-list .contact-inner-item:not(:first-of-type) {
+  margin-top: 15px;
+}
+.contact .contact-item .contact-inner-list .contact-inner-item a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact .contact-item .contact-inner-list .contact-inner-item a:not(:first-of-type) {
+  margin-left: 15px;
+}
+.contact .contact-item .contact-inner-list .contact-inner-item .contact-link {
+  padding: 12px 0;
+}
+.contact .contact-item .contact-inner-list .contact-inner-item span {
+  padding-left: 10.8px;
+}
+.contact .contact-item .contact-inner-list input {
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2em;
+  border-radius: 50px;
+  background-color: transparent;
+}
+.contact .contact-item .contact-inner-list input:focus {
+  outline: none !important;
+  border-color: #444 !important;
+}
+.contact .contact-item .contact-inner-list input::placeholder {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+.contact .contact-item .contact-inner-list .btn-subscibe {
+  color: #191919;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 9.5px 52.5px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.contact .contact-item .contact-inner-list .btn-subscibe:hover {
+  color: #fff;
+  background-color: #b61984;
+}
+
+.contact-inner-list.between .contact-inner-item {
+  padding-bottom: 12px;
+}
+.contact-inner-list.between .contact-inner-item .contact-link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=main.css.map */

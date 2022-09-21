@@ -264,52 +264,158 @@
           <div class="register-course-item col col-12 col-lg-5">
             <div class="register-right-contents">
               <h2>Find Your Course</h2>
-              <form action="">
+              <form class="form-register" action="">
                 <div class="form-item row">
                   <div class="col-6">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Name"
-                    />
+                    <div class="form-item-inner">
+                      <label for="register-name">
+                        <i class="fa-regular fa-user"></i>
+                      </label>
+                      <input
+                        id="register-name"
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                      />
+                    </div>
                   </div>
                   <div class="col-6">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Email"
-                    />
+                    <div class="form-item-inner">
+                      <label for="register-email"
+                        ><i class="fa-regular fa-envelope"></i
+                      ></label>
+                      <input
+                        id="register-email"
+                        type="text"
+                        class="form-control"
+                        placeholder="Email"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="form-item row">
                   <div class="col-12">
-                    <select
-                      class="form-control col col-12"
-                      id="exampleFormControlSelect1"
-                    >
-                      <option>English</option>
-                      <option>Frech</option>
-                      <option>German</option>
-                      <option>China</option>
-                    </select>
+                    <div class="form-item-inner">
+                      <label for="exampleFormControlSelect1">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                      </label>
+                      <select
+                        class="form-control col col-12"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>English</option>
+                        <option>Frech</option>
+                        <option>German</option>
+                        <option>China</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
                 <div class="form-item row">
                   <div class="col-12">
-                    <textarea
-                      class="form-control col col-12"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
+                    <div class="form-item-inner form-textarea">
+                      <label for="exampleFormControlTextarea1">
+                        <i class="fa-regular fa-message"></i>
+                      </label>
+                      <textarea
+                        class="form-control col col-12"
+                        id="exampleFormControlTextarea1"
+                        placeholder="Message"
+                        rows="4"
+                      ></textarea>
+                    </div>
                   </div>
                 </div>
-                <button class="btn-course">SEND</button>
+                <button class="btn-register">SEND</button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Contacts -->
+    <footer class="contact">
+      <div class="container-xl a">
+        <div class="contact-contents row">
+          <div class="contact-item col col-12 col-md-6 col-lg-3">
+            <h2 class="contact-title">Contact us</h2>
+            <ul class="contact-inner-list">
+              <li class="contact-inner-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Franklin St, Greenpoint Ave</span>
+              </li>
+              <li class="contact-inner-item">
+                <i class="fa-solid fa-phone-flip"></i>
+                <span>+2342 5446 67</span>
+              </li>
+              <li class="contact-inner-item">
+                <i class="fa-solid fa-stopwatch"></i>
+                <span>Monday - Friday: 8 AM - 5 PM </span>
+              </li>
+              <li class="contact-inner-item social">
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-item col col-12 col-md-6 col-lg-3">
+            <h2 class="contact-title">Quick Links</h2>
+            <ul class="contact-inner-list between">
+              <li class="contact-inner-item">
+                <a href="#" class="contact-link">Home</a>
+              </li>
+              <li class="contact-inner-item">
+                <a href="#" class="contact-link">Courses</a>
+              </li>
+              <li class="contact-inner-item">
+                <a href="#" class="contact-link">Schedule</a>
+              </li>
+              <li class="contact-inner-item">
+                <a href="#" class="contact-link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-item col col-12 col-md-6 col-lg-3">
+            <h2 class="contact-title">About</h2>
+            <ul class="contact-inner-list between">
+              <li class="contact-inner-item">
+                <a href="#" class="contact-link">About Us</a>
+              </li>
+              <li class="contact-inner-item">
+                <a href="#" class="contact-link">Event</a>
+              </li>
+              <li class="contact-inner-item">
+                <a href="#" class="contact-link">Get Quote</a>
+              </li>
+              <li class="contact-inner-item">
+                <a href="#" class="contact-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-item col col-12 col-md-6 col-lg-3">
+            <h2 class="contact-title">Newsletter</h2>
+            <div class="contact-inner-list">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your email"
+              />
+              <button class="btn-subscibe">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

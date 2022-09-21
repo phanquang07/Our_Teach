@@ -26,6 +26,10 @@
   color: $color;
 }
 
+@mixin  styleForm($bd, $fs, $pd, $bdr) {
+  
+}
+
 @mixin responsive($screen) {
   @if (map-has-key($map: $breakpoints, $key: $screen)) {
     // Tìm thấy tên màn hình
