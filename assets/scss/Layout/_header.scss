@@ -1,19 +1,21 @@
 .header {
-  height: 80px;
+  height: $height48;
   position: fixed;
   width: 100%;
   z-index: 4;
+  background-color: $color-white;
   .pd30 {
     max-width: 1260px;
     padding: 0 30px;
     .header-nav {
-      height: $height;
       padding: $pd0;
     }
   }
 }
 .navbar-toggler {
   border-color: transparent !important;
+  padding: 0;
+  font-size: 21px;
 }
 .logo-link {
   height: 100%;
@@ -21,19 +23,29 @@
   padding-top: 0;
   padding-bottom: 0;
   img {
-    height: $height;
+    height: $height48;
   }
 }
 .nav-right {
   justify-content: flex-end;
   .nav-menu {
     align-items: center;
+    margin-right: -50px;
     .nav-link {
       @include styleText($color-primary, $fs13, $fw600);
-      line-height: $lh80;
+      height: $height48;
+      line-height: $lh48;
       padding: $pd0;
       transition: all 0.3s ease;
       padding-right: 50px;
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        color: $color-secondary;
+        bottom: 0;
+      }
       &:hover {
         color: $color-secondary;
       }
@@ -53,8 +65,8 @@
         $color-secondary,
         1px solid $color-secondary,
         $br50,
-        13.85px,
-        19.25px
+        10.8px,
+        19.5px
       );
       line-height: 1;
       margin-right: 6.75px;
@@ -80,7 +92,7 @@
 }
 
 // Reponsive
-@include responsive('extra-large') {
+@include responsive("extra-large") {
   .header-nav {
     flex-direction: row-reverse;
     justify-content: start;

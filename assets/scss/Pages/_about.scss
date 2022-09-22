@@ -89,6 +89,7 @@
       background-color: $color-white;
       border-radius: 10px;
       padding: 40px 25px 50px 25px;
+      box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
       h2 {
         @include styleText($color-primary, 37.5px, $fw700);
       }
@@ -147,9 +148,9 @@
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 120px;
-  padding-bottom: 250px;
+  padding-bottom: 120px;
   .contact-item {
-    padding: 0 40px;
+    padding-bottom: 80px;
     .contact-title {
       @include styleText($color-white, $fs24 - 0.75px, $fw700);
     }
@@ -163,8 +164,12 @@
         }
         a {
           @include styleText($color-white, $fs15, $fw500);
+          transition: all 0.2s ease;
           &:not(:first-of-type) {
             margin-left: 15px;
+          }
+          &:hover {
+            color: $color-primary;
           }
         }
         .contact-link {
@@ -175,9 +180,10 @@
         }
       }
       input {
+        text-align: center;
         font-size: 12px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 2em;
+        height: 46px;
         border-radius: 50px;
         background-color: transparent;
         &:focus {
@@ -216,7 +222,25 @@
   .contact-inner-item {
     padding-bottom: 12px;
     .contact-link {
+      font-size: 13.5px !important;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease;
+      &:hover {
+        color: $color-white !important;
+        opacity: 0.8;
+      }
     }
+  }
+}
+
+@include responsive("small") {
+  .form-item-inline:last-of-type {
+    margin-top: 15px;
+  }
+  .register-right-contents h2 {
+    font-size: 30.5px;
+  }
+  input, select, textarea {
+    font-size: 10px;
   }
 }

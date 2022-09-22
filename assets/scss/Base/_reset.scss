@@ -32,6 +32,13 @@ label {
   margin-bottom: 0;
 }
 
+input,
+select,
+textarea,
+form {
+  display: block;
+}
+
 li {
   list-style: none;
 }
@@ -55,8 +62,9 @@ img {
 }
 
 .row {
-  margin: 0 -20px;
+  margin: 0 -10px;
 }
+
 .col {
   padding: 0 20px;
 }
